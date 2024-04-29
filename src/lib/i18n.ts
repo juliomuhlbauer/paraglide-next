@@ -12,4 +12,14 @@ export const {
   localizePath,
 } = createI18n<AvailableLanguageTag>({
   prefix: "all",
+  pathnames: {
+    "/properties/[...rest]": {
+      en: "/properties/[...rest]",
+      "pt-br": "/propriedades/[...rest]",
+    },
+    "/properties/custom": {
+      en: "/properties/custom",
+      "pt-br": "/propriedades/customizado",
+    },
+  },
 });
