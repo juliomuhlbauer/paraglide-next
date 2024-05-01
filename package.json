@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
+    "@inlang/paraglide-next": "0.1.6",
+    "million": "^3.0.6",
     "next": "14.2.3",
-    "@inlang/paraglide-next": "0.1.6"
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
     "typescript": "^5",
