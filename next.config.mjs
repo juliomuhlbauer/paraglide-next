@@ -6,17 +6,18 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-const millionConfig = {
-  auto: true,
-  rsc: true,
-};
+const millionConfig = million.next(
+  {
+    auto: true,
+    rsc: true,
+  },
+  nextConfig
+);
 
-const paraglideConfig = paraglide({
+export default paraglide({
   paraglide: {
     project: "./project.inlang",
     outdir: "./src/paraglide",
   },
-  ...nextConfig,
+  ...millionConfig,
 });
-
-export default million.next(millionConfig, paraglideConfig);
